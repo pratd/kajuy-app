@@ -3,7 +3,7 @@
     <section class="searcher valign-wrapper">
         <div id="app" class="container">
             <div class="row valign-wrapper">
-{{--                <component-main-home :some='@json($response)'></component-main-home>--}}
+
                 <welcome></welcome>
             </div>
         </div>
