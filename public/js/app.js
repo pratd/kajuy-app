@@ -2100,10 +2100,8 @@ __webpack_require__.r(__webpack_exports__);
   name: "component-filters",
   data: function data() {
     return {
-      type: 'home',
-      paginate: ['items'],
-      items: [],
-      price: 0
+      type: '',
+      paginate: ['items']
     };
   },
   methods: {

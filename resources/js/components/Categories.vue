@@ -191,10 +191,8 @@
         name: "component-filters",
         data(){
             return {
-                type: 'home',
+                type: '',
                 paginate:['items'],
-                items: [],
-                price: 0
             }
         },
         methods:{
