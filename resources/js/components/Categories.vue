@@ -192,7 +192,7 @@
         data(){
             return {
                 type: '',
-                paginate:['items'],
+                paginate:['services'],
             }
         },
         methods:{
