@@ -1,1 +1,83 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//vuetify
+@import '~vuetify/dist/vuetify.min.css';
+
+//vuetify icons
+@import '~@mdi/font/css/materialdesignicons.min.css';
+
+
+.sub-footer{
+    background-color: $reddish;
+}
+.page-footer, .btn-one{
+    background-color: $bluish;
+    text-transform: none;
+}
+.btn-two{
+    text-transform: none;
+}
+.logo{
+    width: 67px;
+    height: 68px;
+}
+.p{
+    line-height: initial !important;
+}
+.black-text {
+    color: #000000 !important;
+}
+body{
+    font-family:$font-family-sans-serif;
+    font-weight: Normal;
+}
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .radio-container input:checked ~ .checkmark {
+    background-color: $bluish;
+  }
+
