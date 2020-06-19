@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/categories', 'PagesViewController@categories');
 Route::get('/profile', 'PagesViewController@profile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

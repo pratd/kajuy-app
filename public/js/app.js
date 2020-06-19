@@ -2087,14 +2087,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "component-filters",
@@ -2261,6 +2253,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Slider.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Slider.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      value: 0,
+      rules: [function (v) {
+        return v <= 38 || 'more than 40kms';
+      }]
+    };
   }
 });
 
@@ -37815,248 +37845,226 @@ var render = function() {
       { staticClass: "z-depth-0 mr-4 p-0 col s2", attrs: { id: "headingOne" } },
       [
         _c("div", { staticClass: "card-content p-0" }, [
-          _c("ul", { staticClass: "p-0" }, [
-            _c(
-              "li",
-              [
-                _c(
-                  "v-expansion-panels",
-                  { attrs: { focusable: "" } },
-                  [
-                    _c(
-                      "v-expansion-panel",
-                      [
-                        _c("v-expansion-panel-header", [_vm._v("+ Handyman")]),
-                        _vm._v(" "),
-                        _c(
-                          "v-expansion-panel-content",
-                          [
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "radio-container" },
-                                        [
-                                          _vm._v(
-                                            "Electricals\n                                                "
-                                          ),
-                                          _c("input", {
-                                            staticClass: "mr-2 btn-radio",
-                                            attrs: {
-                                              type: "radio",
-                                              name: "radioBtn",
-                                              id: "handyman"
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.checkFilter(
-                                                  "Handyman",
-                                                  0
-                                                )
-                                              }
+          _c(
+            "ul",
+            { staticClass: "p-0", staticStyle: { "list-style-type": "none" } },
+            [
+              _c(
+                "li",
+                [
+                  _c(
+                    "v-expansion-panels",
+                    { staticClass: "radio-header", attrs: { focusable: "" } },
+                    [
+                      _c(
+                        "v-expansion-panel",
+                        { staticClass: "radio-expansion" },
+                        [
+                          _c("v-expansion-panel-header", [
+                            _vm._v("+       Handyman")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-expansion-panel-content",
+                            [
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Electricals\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "handyman"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Handyman",
+                                                0
+                                              )
                                             }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("span", {
-                                            staticClass: "checkmark"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "radio-container" },
-                                        [
-                                          _vm._v(
-                                            "Plumbing\n                                                "
-                                          ),
-                                          _c("input", {
-                                            staticClass: "mr-2 btn-radio",
-                                            attrs: {
-                                              type: "radio",
-                                              name: "radioBtn",
-                                              id: "handyman"
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.checkFilter(
-                                                  "Handyman",
-                                                  1
-                                                )
-                                              }
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("span", {
-                                            staticClass: "checkmark"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "radio-container" },
-                                        [
-                                          _vm._v(
-                                            "Carpentry\n                                                "
-                                          ),
-                                          _c("input", {
-                                            staticClass: "mr-2 btn-radio",
-                                            attrs: {
-                                              type: "radio",
-                                              name: "radioBtn",
-                                              id: "studio"
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.checkFilter(
-                                                  "Handyman",
-                                                  2
-                                                )
-                                              }
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("span", {
-                                            staticClass: "checkmark"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "radio-container" },
-                                        [
-                                          _vm._v(
-                                            "Metals\n                                                "
-                                          ),
-                                          _c("input", {
-                                            staticClass: "mr-2 btn-radio",
-                                            attrs: {
-                                              type: "radio",
-                                              name: "radioBtn",
-                                              id: "studio"
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.checkFilter(
-                                                  "Handyman",
-                                                  3
-                                                )
-                                              }
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("span", {
-                                            staticClass: "checkmark"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Handyman",
-                                              4
-                                            )
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Gardening")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Plumbing\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "handyman"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Handyman",
+                                                1
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Carpentry\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Handyman",
+                                                2
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Metals\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Handyman",
+                                                3
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Gardening\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Handyman",
+                                                4
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ])
       ]
     ),
@@ -38066,147 +38074,153 @@ var render = function() {
       { staticClass: "z-depth-0 mr-4 p-0 col s2", attrs: { id: "headingTwo" } },
       [
         _c("div", { staticClass: "card-content p-0" }, [
-          _c("ul", { staticClass: "p-0" }, [
-            _c(
-              "li",
-              [
-                _c(
-                  "v-expansion-panels",
-                  { attrs: { focusable: "" } },
-                  [
-                    _c(
-                      "v-expansion-panel",
-                      [
-                        _c("v-expansion-panel-header", [_vm._v("+ Cleaning")]),
-                        _vm._v(" "),
-                        _c(
-                          "v-expansion-panel-content",
-                          [
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Cleaning",
-                                              0
-                                            )
-                                          }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [
+          _c(
+            "ul",
+            { staticClass: "p-0", staticStyle: { "list-style-type": "none" } },
+            [
+              _c(
+                "li",
+                [
+                  _c(
+                    "v-expansion-panels",
+                    { staticClass: "radio-header", attrs: { focusable: "" } },
+                    [
+                      _c(
+                        "v-expansion-panel",
+                        [
+                          _c("v-expansion-panel-header", [
+                            _vm._v("+       Cleaning")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-expansion-panel-content",
+                            [
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
                                         _vm._v("< 50m"),
-                                        _c("sup", [_vm._v("2")])
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Cleaning",
-                                              1
-                                            )
+                                        _c("sup", [_vm._v("2")]),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Cleaning",
+                                                0
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
                                         _vm._v("> 50m"),
                                         _c("sup", [_vm._v("2")]),
                                         _vm._v(" & < 200m"),
-                                        _c("sup", [_vm._v("2")])
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Cleaning",
-                                              2
-                                            )
+                                        _c("sup", [_vm._v("2")]),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Cleaning",
+                                                1
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
                                         _vm._v("> 200m"),
-                                        _c("sup", [_vm._v("2")])
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                                        _c("sup", [_vm._v("2")]),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Cleaning",
+                                                2
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ])
       ]
     ),
@@ -38219,136 +38233,151 @@ var render = function() {
       },
       [
         _c("div", { staticClass: "card-content p-0" }, [
-          _c("ul", { staticClass: "p-0" }, [
-            _c(
-              "li",
-              [
-                _c(
-                  "v-expansion-panels",
-                  { attrs: { focusable: "" } },
-                  [
-                    _c(
-                      "v-expansion-panel",
-                      [
-                        _c("v-expansion-panel-header", [_vm._v("+ Removals")]),
-                        _vm._v(" "),
-                        _c(
-                          "v-expansion-panel-content",
-                          [
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Removals",
-                                              0
-                                            )
+          _c(
+            "ul",
+            { staticClass: "p-0", staticStyle: { "list-style-type": "none" } },
+            [
+              _c(
+                "li",
+                [
+                  _c(
+                    "v-expansion-panels",
+                    { staticClass: "radio-header", attrs: { focusable: "" } },
+                    [
+                      _c(
+                        "v-expansion-panel",
+                        [
+                          _c("v-expansion-panel-header", [
+                            _vm._v("+       Removals")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-expansion-panel-content",
+                            [
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "< 30kg\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Removals",
+                                                0
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("< 30kg")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Removals",
-                                              1
-                                            )
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "> 30kg & < 150kg\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Removals",
+                                                1
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("> 30kg & < 150kg")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter(
-                                              "Removals",
-                                              2
-                                            )
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "> 150kg\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Removals",
+                                                2
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("> 150kg")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ])
       ]
     ),
@@ -38361,127 +38390,151 @@ var render = function() {
       },
       [
         _c("div", { staticClass: "card-content p-0" }, [
-          _c("ul", { staticClass: "p-0" }, [
-            _c(
-              "li",
-              [
-                _c(
-                  "v-expansion-panels",
-                  { staticClass: "blue", attrs: { focusable: "" } },
-                  [
-                    _c(
-                      "v-expansion-panel",
-                      [
-                        _c("v-expansion-panel-header", [_vm._v("+ Others")]),
-                        _vm._v(" "),
-                        _c(
-                          "v-expansion-panel-content",
-                          [
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter("Others", 0)
+          _c(
+            "ul",
+            { staticClass: "p-0", staticStyle: { "list-style-type": "none" } },
+            [
+              _c(
+                "li",
+                [
+                  _c(
+                    "v-expansion-panels",
+                    { staticClass: "radio-header", attrs: { focusable: "" } },
+                    [
+                      _c(
+                        "v-expansion-panel",
+                        [
+                          _c("v-expansion-panel-header", [
+                            _vm._v("+       Others")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-expansion-panel-content",
+                            [
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Redecoration\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Others",
+                                                0
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Redecoration")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter("Others", 1)
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "Design\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Others",
+                                                1
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Design")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-row",
-                              { attrs: { "no-gutters": "" } },
-                              [
-                                _c(
-                                  "v-col",
-                                  [
-                                    _c("v-card", { staticClass: "py-2" }, [
-                                      _c("input", {
-                                        staticClass: "mr-2 btn-radio",
-                                        attrs: {
-                                          type: "radio",
-                                          name: "radioBtn",
-                                          id: "studio"
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.checkFilter("Others", 2)
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-row",
+                                { attrs: { "no-gutters": "" } },
+                                [
+                                  _c("v-col", [
+                                    _c(
+                                      "label",
+                                      { staticClass: "radio-container" },
+                                      [
+                                        _vm._v(
+                                          "DIY\n                                            "
+                                        ),
+                                        _c("input", {
+                                          staticClass: "mr-2 btn-radio",
+                                          attrs: {
+                                            type: "radio",
+                                            name: "radioBtn",
+                                            id: "studio"
+                                          },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.checkFilter(
+                                                "Others",
+                                                2
+                                              )
+                                            }
                                           }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("DIY")])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ])
+                                        }),
+                                        _vm._v(" "),
+                                        _c("span", { staticClass: "checkmark" })
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]
+          )
         ])
       ]
     )
@@ -38640,6 +38693,86 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Slider.vue?vue&type=template&id=872262e8&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Slider.vue?vue&type=template&id=872262e8& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-card",
+    { attrs: { flat: "", color: "transparent" } },
+    [
+      _c("v-subheader", [_vm._v("Distance")]),
+      _vm._v(" "),
+      _c(
+        "v-card-text",
+        { staticClass: "pt-0" },
+        [
+          _c("v-slider", {
+            attrs: {
+              rules: _vm.rules,
+              label: "How Far ?",
+              step: "10",
+              "thumb-label": "always",
+              max: 40,
+              ticks: ""
+            },
+            model: {
+              value: _vm.value,
+              callback: function($$v) {
+                _vm.value = $$v
+              },
+              expression: "value"
+            }
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Welcome.vue?vue&type=template&id=51777872&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Welcome.vue?vue&type=template&id=51777872& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -95705,8 +95838,9 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/dist/vuetify.js");
-/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/dist/vuetify.js");
+/* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuetify__WEBPACK_IMPORTED_MODULE_1__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -95715,10 +95849,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-window.VueRouter = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 
-Vue.use(vuetify__WEBPACK_IMPORTED_MODULE_0___default.a);
-/*adding vue routet
+
+Vue.use(vuetify__WEBPACK_IMPORTED_MODULE_1___default.a);
+Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -95731,23 +95865,34 @@ Vue.use(vuetify__WEBPACK_IMPORTED_MODULE_0___default.a);
 
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 Vue.component('welcome-vue', __webpack_require__(/*! ./components/Welcome.vue */ "./resources/js/components/Welcome.vue")["default"]);
-Vue.component('signup-vue', __webpack_require__(/*! ./components/Signup.vue */ "./resources/js/components/Signup.vue")["default"]);
+Vue.component('slider-vue', __webpack_require__(/*! ./components/Slider.vue */ "./resources/js/components/Slider.vue")["default"]);
 Vue.component('profile-vue', __webpack_require__(/*! ./components/Profile.vue */ "./resources/js/components/Profile.vue")["default"]);
 Vue.component('login-vue', __webpack_require__(/*! ./components/Login.vue */ "./resources/js/components/Login.vue")["default"]);
 Vue.component('edit-service-vue', __webpack_require__(/*! ./components/Edit-service.vue */ "./resources/js/components/Edit-service.vue")["default"]);
+Vue.component('category-vue', __webpack_require__(/*! ./components/Category-details.vue */ "./resources/js/components/Category-details.vue")["default"]);
 Vue.component('categories-vue', __webpack_require__(/*! ./components/Categories.vue */ "./resources/js/components/Categories.vue")["default"]);
 Vue.component('bookings-vue', __webpack_require__(/*! ./components/Bookings.vue */ "./resources/js/components/Bookings.vue")["default"]);
-Vue.component('category-details-vue', __webpack_require__(/*! ./components/Category-details.vue */ "./resources/js/components/Category-details.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  mode: 'history',
+  routes: [// {
+    //     path: '/',
+    //     name:'home',
+    //     component: welcome-vue
+    // },
+    // {
+    // }
+  ]
+});
 var app = new Vue({
   el: '#app',
-  // VueRouter,
-  vuetify: new vuetify__WEBPACK_IMPORTED_MODULE_0___default.a()
+  router: router,
+  vuetify: new vuetify__WEBPACK_IMPORTED_MODULE_1___default.a()
 });
 
 /***/ }),
@@ -96179,26 +96324,29 @@ component.options.__file = "resources/js/components/Profile.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Signup.vue":
+/***/ "./resources/js/components/Slider.vue":
 /*!********************************************!*\
-  !*** ./resources/js/components/Signup.vue ***!
+  !*** ./resources/js/components/Slider.vue ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
-var script = {}
+/* harmony import */ var _Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Slider.vue?vue&type=template&id=872262e8& */ "./resources/js/components/Slider.vue?vue&type=template&id=872262e8&");
+/* harmony import */ var _Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider.vue?vue&type=script&lang=js& */ "./resources/js/components/Slider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
-  script,
-  render,
-  staticRenderFns,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -96206,8 +96354,42 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
-component.options.__file = "resources/js/components/Signup.vue"
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Slider.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Slider.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Slider.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Slider.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Slider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Slider.vue?vue&type=template&id=872262e8&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Slider.vue?vue&type=template&id=872262e8& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Slider.vue?vue&type=template&id=872262e8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Slider.vue?vue&type=template&id=872262e8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_872262e8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -96220,17 +96402,18 @@ component.options.__file = "resources/js/components/Signup.vue"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
+/* harmony import */ var _Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Welcome.vue?vue&type=template&id=51777872& */ "./resources/js/components/Welcome.vue?vue&type=template&id=51777872&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  render,
-  staticRenderFns,
+  _Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -96238,8 +96421,28 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
+/* hot reload */
+if (false) { var api; }
 component.options.__file = "resources/js/components/Welcome.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Welcome.vue?vue&type=template&id=51777872&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/Welcome.vue?vue&type=template&id=51777872& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Welcome.vue?vue&type=template&id=51777872& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Welcome.vue?vue&type=template&id=51777872&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

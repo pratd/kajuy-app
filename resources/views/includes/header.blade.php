@@ -3,7 +3,6 @@
         @if (Route::has('login'))
 
             @auth
-            <li><a href="{{ url('/home') }}">{{ __('Home') }}</a></li>
             <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}</a></li>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -23,16 +22,12 @@
         <div class="container">
         <div class="nav-wrapper transparent">
             <a class="brand-logo" href="{{ url('/') }}">
-                <img class="logo" alt="logo" src="/img/{{$logo}}.png">
+                <img class="logo" alt="logo" src="/img/assets/{{$logo}}.png">
             </a>
             <ul class="right hide-on-med-and-down">
-                @if ($logo=='smallIcon')
-                    <li><a class="waves-effect waves-light btn btn-one">{{ __('Search for your place')}}</a></li>
-                @endif
-                <li><a class="waves-effect waves-light btn btn-one">{{ __('Post your place') }}</a></li>
                 <li>
                     @auth
-                        @if($logo=="smallIcon")
+                        @if($logo=="logo")
                             <a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">
                             {{__('Hello ')}}{{Auth::user()->name }}<i class="large material-icons black-text left">face</i></a>
                         @else
@@ -40,7 +35,7 @@
                             {{__('Hello ')}}{{Auth::user()->name }}<i class="large material-icons left">face</i></a>
                         @endif
                     @else
-                        @if($logo=="smallIcon")
+                        @if($logo=="logo")
                             <a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">
                             <i class="large material-icons black-text">menu</i></a>
                         @else

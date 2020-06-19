@@ -6,7 +6,6 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
 //vuetify
 @import '~vuetify/dist/vuetify.min.css';
 
@@ -49,17 +48,17 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
 
   /* Hide the browser's default radio button */
-  .radio-container input {
+.radio-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+}
 
-  /* Create a custom radio button */
-  .checkmark {
+/* Create a custom radio button */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,15 +68,14 @@ body{
     height: 15px;
     border: solid 1px #000000;
     background-color: #ffffff;
-  }
+}
 
-  /* On mouse-over, add a grey background color */
-  .radio-container:hover input ~ .checkmark {
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
+}
 
-  /* When the radio button is checked, add a blue background */
-  .radio-container input:checked ~ .checkmark {
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
     background-color: $bluish;
-  }
-
+}

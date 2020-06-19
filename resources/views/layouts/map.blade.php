@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    @include('includes.header', ['logo'=>'smallIcon'])
+    @include('includes.header', ['logo'=>'logo'])
 
     @yield('content')
 
