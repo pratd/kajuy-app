@@ -2283,6 +2283,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -38731,7 +38732,8 @@ var render = function() {
               step: "10",
               "thumb-label": "always",
               max: 40,
-              ticks: ""
+              ticks: "",
+              dotSize: 26
             },
             model: {
               value: _vm.value,

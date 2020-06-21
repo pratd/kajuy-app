@@ -10,6 +10,7 @@
             thumb-label="always"
             :max="40"
             ticks
+            :dotSize="26"
             ></v-slider>
         </v-card-text>
     </v-card>

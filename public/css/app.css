@@ -10942,3 +10942,87 @@ body {
   background-color: #235f96;
 }
 
+.line {
+  margin-top: 0;
+  border-top: 1px solid #000;
+  width: 120px;
+}
+
+.radio-header {
+  height: 52px;
+  border-radius: 18px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 2px #000000;
+  background-color: #ffffff;
+}
+
+.radio-container {
+  top: 10px !important;
+  font-family: "Roboto", "Nunito", sans-serif;
+  font-size: 14px !important;
+}
+
+.v-expansion-panel--active > .v-expansion-panel-header {
+  min-height: 52px !important;
+  border-top-left-radius: 18px;
+}
+
+.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile) > .v-expansion-panel--active {
+  border-radius: 18px;
+}
+
+.v-application--wrap {
+  min-height: 48px !important;
+}
+
+/********************************/
+
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+.searcher {
+  background-image: url("/img/assets/eugen-str-CrhsIRY3JWY-unsplash.jpg");
+  background-size: cover;
+  height: 956px;
+}
+
+.transparent {
+  background: transparent !important;
+}
+
+/* Position the navbar container inside the image */
+
+.nav-container {
+  position: absolute;
+  margin: 70px;
+  width: 90%;
+}
+
+/* The navbar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar {
+  padding: 0px !important;
+}
+
