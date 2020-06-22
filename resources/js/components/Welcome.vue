@@ -17,7 +17,8 @@
                         <div class="col s12 d-flex justify-content-center">
                             <v-app class="searchline">
                                 <v-autocomplete label="Type city, town, etc." :items="cities"
-                                    persistent-hint v-model="model" prepend-icon="mdi-city" :menu-props="{ auto: true, overflowY: false}">
+                                    persistent-hint v-model="model" prepend-icon="mdi-city" :menu-props="{ auto: true, overflowY: false}" :rules="rules"
+                                    v-on:keyup.enter="goToUrL">
                                 </v-autocomplete>
                             </v-app>
                             <!-- <input type="text" id="autocomplete-input" class="autocomplete">
@@ -49,7 +50,10 @@
                 'Mérida','Las Palmas de Gran Canaria','Vitoria-Gasteiz','Castellón de la Plana','Palencia','Lleida',
                 'Cáceres','Segovia','Pontevedra','Santa Cruz de Tenerife','Soria','Huesca','Donostia','Cuenca','Girona',
                 'Ávila','Ciudad Real','Zamora','Lugo','Teruel'
-                ]
+                ],
+                rules: [
+                    value => !!value || 'Required.',
+                ],
             }
         },
         methods: {

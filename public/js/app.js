@@ -2342,12 +2342,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var optionText = 'categories';
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       model: null,
-      cities: ['Madrid', 'Barcelona', 'Sevilla', 'Bilbao', 'Valencia', 'Zaragoza', 'Málaga', 'Murcia', 'Granada', 'Vigo', 'Palma', 'A Coruña', 'Santa María de Gracia', 'Gijón', 'Valladolid', 'Córdoba', 'Alicante', 'Cádiz', 'Pamplona', 'Oviedo', 'Zuazo de Vitoria', 'Santander', 'Cartagena', 'Marbella', 'Mataró', 'Almería', 'Burgos', 'Salamanca', 'Albacete', 'Huelva', 'Logroño', 'Badajoz', 'León', 'Tarragona', 'Ourense', 'Jaén', 'Algeciras', 'Santiago de Compostela', 'Lorca', 'Toledo', 'Guadalajara', 'Linares', 'Arrecife', 'Mérida', 'Las Palmas de Gran Canaria', 'Vitoria-Gasteiz', 'Castellón de la Plana', 'Palencia', 'Lleida', 'Cáceres', 'Segovia', 'Pontevedra', 'Santa Cruz de Tenerife', 'Soria', 'Huesca', 'Donostia', 'Cuenca', 'Girona', 'Ávila', 'Ciudad Real', 'Zamora', 'Lugo', 'Teruel']
+      cities: ['Madrid', 'Barcelona', 'Sevilla', 'Bilbao', 'Valencia', 'Zaragoza', 'Málaga', 'Murcia', 'Granada', 'Vigo', 'Palma', 'A Coruña', 'Santa María de Gracia', 'Gijón', 'Valladolid', 'Córdoba', 'Alicante', 'Cádiz', 'Pamplona', 'Oviedo', 'Zuazo de Vitoria', 'Santander', 'Cartagena', 'Marbella', 'Mataró', 'Almería', 'Burgos', 'Salamanca', 'Albacete', 'Huelva', 'Logroño', 'Badajoz', 'León', 'Tarragona', 'Ourense', 'Jaén', 'Algeciras', 'Santiago de Compostela', 'Lorca', 'Toledo', 'Guadalajara', 'Linares', 'Arrecife', 'Mérida', 'Las Palmas de Gran Canaria', 'Vitoria-Gasteiz', 'Castellón de la Plana', 'Palencia', 'Lleida', 'Cáceres', 'Segovia', 'Pontevedra', 'Santa Cruz de Tenerife', 'Soria', 'Huesca', 'Donostia', 'Cuenca', 'Girona', 'Ávila', 'Ciudad Real', 'Zamora', 'Lugo', 'Teruel'],
+      rules: [function (value) {
+        return !!value || 'Required.';
+      }]
     };
   },
   methods: {
@@ -38863,7 +38867,25 @@ var render = function() {
                         items: _vm.cities,
                         "persistent-hint": "",
                         "prepend-icon": "mdi-city",
-                        "menu-props": { auto: true, overflowY: false }
+                        "menu-props": { auto: true, overflowY: false },
+                        rules: _vm.rules
+                      },
+                      on: {
+                        keyup: function($event) {
+                          if (
+                            !$event.type.indexOf("key") &&
+                            _vm._k(
+                              $event.keyCode,
+                              "enter",
+                              13,
+                              $event.key,
+                              "Enter"
+                            )
+                          ) {
+                            return null
+                          }
+                          return _vm.goToUrL($event)
+                        }
                       },
                       model: {
                         value: _vm.model,
