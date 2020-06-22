@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-    @include('includes.header', ['logo'=>'logo'])
+    @include('includes.header', ['logo'=>'logo-transparent'])
 
     @yield('content')
 

@@ -10995,7 +10995,7 @@ body {
 
 .nav-container {
   position: absolute;
-  margin: 70px;
+  margin: 100px;
   width: 90%;
 }
 
@@ -11004,6 +11004,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  height: 200px;
 }
 
 /* Navbar links */
@@ -11024,5 +11025,42 @@ body {
 
 .navbar {
   padding: 0px !important;
+}
+
+.searchArea {
+  position: relative;
+  margin: auto;
+  top: 200px;
+  width: 681px;
+  height: 498px;
+  background-color: rgba(227, 197, 197, 0.75);
+}
+
+.subtitle-1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtitle-2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-primary {
+  width: 264px;
+  border-radius: 18px !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.55);
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  font-weight: 200;
+  font-stretch: normal;
+}
+
+.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+  background-color: #235f96;
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+  height: 45px;
 }
 

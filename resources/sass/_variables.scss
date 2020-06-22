@@ -10,9 +10,10 @@ $font-size-button: 20px;
 $font-size-main: 28px;
 $font-size-big:36px;
 $font-size-regular:18px;
+$font-size-small:16px;
 
 // Colors
-$blue: #3490dc;
+$blue: #3490dc !default;
 $indigo: #6574cd;
 $purple: #9561e2;
 $pink: #f66d9b;
