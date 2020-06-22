@@ -2338,6 +2338,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 var optionText = 'categories';
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -38847,17 +38851,31 @@ var render = function() {
           _c("div", { staticClass: "col s12" }, [
             _c(
               "div",
-              {
-                staticClass: "input-field col s12 d-flex justify-content-center"
-              },
+              { staticClass: "col s12 d-flex justify-content-center" },
               [
-                _c("v-text-field", {
-                  attrs: {
-                    label: "Type city, town, etc.",
-                    rules: _vm.rules,
-                    "hide-details": "auto"
-                  }
-                })
+                _c(
+                  "v-app",
+                  { staticClass: "searchline" },
+                  [
+                    _c("v-autocomplete", {
+                      attrs: {
+                        label: "Type city, town, etc.",
+                        items: _vm.cities,
+                        "persistent-hint": "",
+                        "prepend-icon": "mdi-city",
+                        "menu-props": { auto: true, overflowY: false }
+                      },
+                      model: {
+                        value: _vm.model,
+                        callback: function($$v) {
+                          _vm.model = $$v
+                        },
+                        expression: "model"
+                      }
+                    })
+                  ],
+                  1
+                )
               ],
               1
             )

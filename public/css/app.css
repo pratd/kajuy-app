@@ -11064,3 +11064,15 @@ body {
   height: 45px;
 }
 
+.searchline {
+  width: 600px !important;
+  background-color: transparent !important;
+}
+
+.v-autocomplete__content.v-menu__content {
+  background-color: transparent !important;
+  position: absolute;
+  top: 65px !important;
+  left: 30px !important;
+}
+

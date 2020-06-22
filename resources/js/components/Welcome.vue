@@ -14,8 +14,12 @@
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <div class="input-field col s12 d-flex justify-content-center">
-                            <v-text-field label="Type city, town, etc." :rules="rules" hide-details="auto"></v-text-field>
+                        <div class="col s12 d-flex justify-content-center">
+                            <v-app class="searchline">
+                                <v-autocomplete label="Type city, town, etc." :items="cities"
+                                    persistent-hint v-model="model" prepend-icon="mdi-city" :menu-props="{ auto: true, overflowY: false}">
+                                </v-autocomplete>
+                            </v-app>
                             <!-- <input type="text" id="autocomplete-input" class="autocomplete">
                             <label for="autocomplete-input" class="subtitle-2">Type city, town, etc.</label> -->
                         </div>
